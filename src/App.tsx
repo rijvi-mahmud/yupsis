@@ -137,11 +137,8 @@ function App() {
   return (
     <div className="p-5">
       <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          className="flex flex-col gap-10"
-        >
-          <div className="flex items-center gap-10">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col">
+          <div className="flex items-center gap-5">
             {/* Product Name Field */}
             <FormField
               control={form.control}
